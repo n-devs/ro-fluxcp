@@ -1,4 +1,6 @@
-FROM php:5.3-apache
+FROM php:5.6-apache
 
-WORKDIR /var/www/html/
-# RUN apt-get update && apt-get upgrade -y
+WORKDIR /var/www/html
+
+EXPOSE 80
+CMD ["apache2-foreground"]
