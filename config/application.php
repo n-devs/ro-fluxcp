@@ -2,9 +2,9 @@
 // This is the application configuration file. All values have been set to
 // the default, and should be changed as needed.
 return array(
-	'ServerAddress'				=> 'localhost',				// This value is the hostname:port under which Flux runs. (e.g., example.com or example.com:80)
-	'BaseURI'					=> 'fluxcp',						// The base URI is the base web root on which your application lies.
-	'InstallerPassword'			=> 'secretpassword',		// Installer/updater password.
+	'ServerAddress'				=> '192.168.2.10',				// This value is the hostname:port under which Flux runs. (e.g., example.com or example.com:80)
+	'BaseURI'					=> '/',						// The base URI is the base web root on which your application lies.
+	'InstallerPassword'			=> 'password',		// Installer/updater password.
 	'RequireOwnership'			=> true,					// Require the executing user to be owner of the FLUX_ROOT/data/ directory tree? (Better for security)
 															// WARNING: This will be mostly IGNORED on non-POSIX-compliant OSes (e.g. Windows).
 	'DefaultLoginGroup'			=> null,
@@ -404,8 +404,8 @@ return array(
 		),
 	),
 	
-	'AllowMD5PasswordSearch'		=> false,
-	'ReallyAllowMD5PasswordSearch'	=> false, // Are you POSITIVELY sure?
+	'AllowMD5PasswordSearch'		=> true,
+	'ReallyAllowMD5PasswordSearch'	=> true, // Are you POSITIVELY sure?
 
 	// Specifies which modules and actions should be ignored by Tidy
 	// (enabled/disabled by the OutputCleanHTML option).

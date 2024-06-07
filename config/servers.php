@@ -13,7 +13,7 @@ return array(
 			'Convert'    => 'utf8',
 				// -- 'Convert' option only works when 'Encoding' option is specified and iconv (http://php.net/iconv) is available.
 				// -- It specifies the encoding to convert your MySQL data to on the website (most likely needs to be utf8)
-			'Hostname'   => '127.0.0.1',
+			'Hostname'   => '192.168.2.10',
 			'Username'   => 'ragnarok',
 			'Password'   => 'ragnarok',
 			'Database'   => 'ragnarok',
@@ -34,7 +34,7 @@ return array(
 			'Convert'    => 'utf8',
 				// -- 'Convert' option only works when 'Encoding' option is specified and iconv (http://php.net/iconv) is available.
 				// -- It specifies the encoding to convert your MySQL data to on the website (most likely needs to be utf8)
-			'Hostname'   => '127.0.0.1',
+			'Hostname'   => '192.168.2.10',
 			'Username'   => 'ragnarok',
 			'Password'   => 'ragnarok',
 			'Database'   => 'ragnarok',
@@ -43,9 +43,9 @@ return array(
 		),
 		// Login server configuration.
 		'LoginServer'    => array(
-			'Address'  => '127.0.0.1',
+			'Address'  => '192.168.2.10',
 			'Port'     => 6900,
-			'UseMD5'   => false,
+			'UseMD5'   => true,
 			'NoCase'   => true, // rA account case-sensitivity; Default: Case-INsensitive (true).
 			'GroupID'  => 0,    // Default account group ID during registration.
 			//'Database' => 'ragnarok'
@@ -83,11 +83,11 @@ return array(
 					'MvpItem'     => 100
 				),
 				'CharServer'      => array(
-					'Address'     => '127.0.0.1',
+					'Address'     => '192.168.2.10',
 					'Port'        => 6121
 				),
 				'MapServer'       => array(
-					'Address'     => '127.0.0.1',
+					'Address'     => '192.168.2.10',
 					'Port'        => 5121
 				),
 				// -- WoE days and times --

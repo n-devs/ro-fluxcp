@@ -1,0 +1,21 @@
+version: '3' # vs mais atual
+
+services:
+  fluxcp:
+    build: ./
+    container_name: ro-fluxcp
+    restart: always
+    tty: true
+    working_dir: /var/www/ro-fluxcp
+    volumes:
+      - ./:/var/www/ro-fluxcp
+    ports:
+      - 7788:80
+    # command: >
+    #   bash -c apt-get install php-mysql
+    networks:
+      - ro-network
+
+networks:
+  ro-network:
+    driver: bridge
